@@ -9,7 +9,14 @@ import classes from './ContactData.css'
 class ContactData extends Component {
     state = { 
         orderForm: {
-            name: 'Aniket Kumar',
+            name: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeholder: 'Your Name'
+                },
+                value: ''
+            },
             street: 'Teststreet 1',
             zipCode: '123456',
             country: 'India',
